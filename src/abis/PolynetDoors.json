@@ -1,0 +1,712 @@
+{
+  "contractName": "PolynetDoors",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "announcement",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [],
+      "name": "viewMessage",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"announcement\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"viewMessage\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/eda369/Chainlink/Polynet-attack/PolynetDoors/contracts/PolynetDoors.sol\":\"PolynetDoors\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/eda369/Chainlink/Polynet-attack/PolynetDoors/contracts/PolynetDoors.sol\":{\"keccak256\":\"0x3ac3a06ac035fe65cfa9e704fbd5e030b19db9b100ade8ee9fe02069b0a36fb9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://42cd3b08faebecc3f21081c2517512e53025fbefa107efd7b489c68701a6baa6\",\"dweb:/ipfs/QmSMBwCycq5ReadYAQvzBzUk4EQMuVrPpuF2bpwonDezUV\"]}},\"version\":1}",
+  "bytecode": "0x6080604052604051806107a0016040528061077681526020016103ec610776913960009080519060200190610035929190610089565b5034801561004257600080fd5b5033600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550610126565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100ca57805160ff19168380011785556100f8565b828001600101855582156100f8579182015b828111156100f75782518255916020019190600101906100dc565b5b5090506101059190610109565b5090565b5b8082111561012257600081600090555060010161010a565b5090565b6102b7806101356000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063191384d11461003b5780639f5755ae146100be575b600080fd5b610043610141565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610083578082015181840152602081019050610068565b50505050905090810190601f1680156100b05780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100c66101e3565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101065780820151818401526020810190506100eb565b50505050905090810190601f1680156101335780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b606060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101d95780601f106101ae576101008083540402835291602001916101d9565b820191906000526020600020905b8154815290600101906020018083116101bc57829003601f168201915b5050505050905090565b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102795780601f1061024e57610100808354040283529160200191610279565b820191906000526020600020905b81548152906001019060200180831161025c57829003601f168201915b50505050508156fea26469706673582212202d35d1f7a52e5e48b7088a4c425577020f7b76bf81f2db3bbd3984f74352865e64736f6c634300060c00332020202020202020202020202020202032303231e5b9b438e69c883131e697a5506f6c796e6574776f726b204465466920e694bbe587bbe69ab4e99cb2e79a84e6bc8fe6b49ee4bbb7e580bce4bcb0e7ae97efbc8ce58f82e88083e58cbae59d97e993bee8a18ce4b89ae4b88ae5b882e585ace58fb820636f696e62617365e79a84e585ace5bc80e896aae8b584e5be85e98187efbc8c20202020202020202020202020202020e4baa7e59381e7bb8fe79086e7baa7e588ab203430e4b887e7be8ee58583e5b9b4e896aaefbc8ce69c88e896aa20332e3333e4b887e38082e8afa5e6bc8fe6b49ee5a881e88381e7ad89e7baa7203130e7baa7e3808220202020202020202020202020202020e6a0b9e68daee9bb91e5aea2e7acace4ba8ce5ae9ae5be8be79a84e4bcb0e4bbb7e585ace5bc8fe4bbb7e580bce4b8ba20efbc9a2035202a20332e3333202a203130203d20243136362e35e4b8872020202020202020202020202020202020e5a487e6b3a83a202020202020202020202020202020202020202020e58583e5ae87e5ae99e7acace4ba8ce5ae9ae5be8b20efbc9a2020202020202020202020202020202020202020202020202020202020202020202020e4bfa1e681afe5ae89e585a8e6bc8fe6b49ee79a84e5b882e59cbae4bbb7e580bc203d2020202020202020202020202020202020202020202020202020202020202020202020202020202020352020202020202020202020202020202020202020202020202020202020202020202020202020c39720e4baa7e7949fe8afa5e5ae89e585a8e6bc8fe6b49ee5bc80e58f91e4babae59198e79a84e69c88e5b9b3e59d87e5b7a5e8b584202020202020202020202020202020202020202020202020202020202020202020202020c39720e6bc8fe6b49ee79a84e5ae89e585a8e7ad89e7baa720202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020203d3d3d3e20202020e5ae9ae5be8be588b6e5ae9ae8808520e5be90e9b9a4e5869b202020202020202020202020202020202a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a20202020202020202020202020202020204175677573742031312c203230323120506f6c796e6574776f726b20536563757269747920496e636964656e742c2074686520657374696d617465642076616c7565206f66207468652076756c6e65726162696c697479206578706f736564206279207468697320506f6c796e6574776f726b20446546692061747461636b2c202020202020202020202020202020202077697468207265666572656e636520746f20746865207075626c69632073616c617279207061636b616765206f6620636f696e626173652c2020202020202020202020202020202061206c697374656420636f6d70616e7920696e2074686520626c6f636b636861696e20696e6475737472792c20697320243430302c303030207065722079656172206174207468652070726f64756374206d616e61676572206c6576656c2c2020202020202020202020202020202020206f72202433332c33303020706572206d6f6e74682e205468652076756c6e65726162696c69747920686173206120746872656174206c6576656c206f662031302e20202020202020202020202020202020204163636f7264696e6720746f20746865207365636f6e64206c6177206f66206861636b696e672076616c756174696f6e20666f726d756c612076616c75652069733a2035202a20332e3333202a203130203d2024312e363635206d696c6c696f6e202020202020202020202020202020204e6f7465733a2020202020202020202020202020202020546865205365636f6e64204c6177206f66206861636b6572206d65746176657273652e2020202020202020202020202020202020202020202020202020202020202020202020204d61726b65742076616c7565206f6620637962657273656375726974792076756c6e65726162696c697479203d20202020202020202020202020202020202020202020202020202020202020202020202020203520202020202020202020202020202020202020202020202020202020202020202020202020c397207468652061766572616765206d6f6e74686c792073616c617279206f662074686520646576656c6f7065722077686f20637265617465642074686520637962657273656375726974792076756c6e65726162696c697479202020202020202020202020202020202020202020202020202020202020202020202020c3972074686520696d706163742073636f7265206f66207468652076756c6e65726162696c6974792020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020546865206c61772077617320637265617465642062792058752048656a756e2020202020202020202020202020202020",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063191384d11461003b5780639f5755ae146100be575b600080fd5b610043610141565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610083578082015181840152602081019050610068565b50505050905090810190601f1680156100b05780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6100c66101e3565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156101065780820151818401526020810190506100eb565b50505050905090810190601f1680156101335780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b606060008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101d95780601f106101ae576101008083540402835291602001916101d9565b820191906000526020600020905b8154815290600101906020018083116101bc57829003601f168201915b5050505050905090565b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102795780601f1061024e57610100808354040283529160200191610279565b820191906000526020600020905b81548152906001019060200180831161025c57829003601f168201915b50505050508156fea26469706673582212202d35d1f7a52e5e48b7088a4c425577020f7b76bf81f2db3bbd3984f74352865e64736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "82:2785:0:-:0;;;291:1993;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;2509:136;;;;;;;;;;2628:10;2620:5;;:18;;;;;;;;;;;;;;;;;;82:2785;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "82:2785:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2769:95;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;291:1993;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2769:95;2813:13;2845:12;2838:19;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2769:95;:::o;291:1993::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\n\n// Set Solidity version\npragma solidity 0.6.12;\n\ncontract PolynetDoors {\n\n    // Set a public state variable 'message' to be \"Hello World!\"\n    // Public variables can be accessed outside of this contract\n    // string public message = \"Hello World!\";\n      string public announcement = \" \\\n               2021年8月11日Polynetwork DeFi 攻击暴露的漏洞价值估算，参考区块链行业上市公司 coinbase的公开薪资待遇， \\\n               产品经理级别 40万美元年薪，月薪 3.33万。该漏洞威胁等级 10级。 \\\n               根据黑客第二定律的估价公式价值为 ： 5 * 3.33 * 10 = $166.5万  \\\n               备注: \\\n                    元宇宙第二定律 ： \\\n                                  信息安全漏洞的市场价值 =  \\\n                                       5   \\\n                                   × 产生该安全漏洞开发人员的月平均工资 \\\n                                   × 漏洞的安全等级  \\\n                                                     \\\n                ===>    定律制定者 徐鹤军 \\\n               **********************************************  \\\n               August 11, 2021 Polynetwork Security Incident, the estimated value of the vulnerability exposed by this Polynetwork DeFi attack,  \\\n               with reference to the public salary package of coinbase, \\\n               a listed company in the blockchain industry, is $400,000 per year at the product manager level,   \\\n               or $33,300 per month. The vulnerability has a threat level of 10.  \\\n               According to the second law of hacking valuation formula value is: 5 * 3.33 * 10 = $1.665 million \\\n               Notes:  \\\n               The Second Law of hacker metaverse. \\\n                                   Market value of cybersecurity vulnerability =  \\\n                                    5  \\\n                                   × the average monthly salary of the developer who created the cybersecurity vulnerability \\\n                                   × the impact score of the vulnerability  \\\n                                                                           \\\n               The law was created by Xu Hejun  \\\n               \" ;\n\n    // Create private state variable 'owner' as an address\n    // Private variables can only be accessed within this contract\n    address private owner;\n\n    // Constructor function is executed upon contract creation\n    constructor() public {\n\n        // Set address of 'owner' to be the address that deployed the contract\n        owner = msg.sender;\n    }\n\n    // viewMessage() is a public function that any address can call, it returns the value of state variable 'message'\n    function viewMessage() public view returns (string memory) {\n        return announcement;\n    }\n\n}\n",
+  "sourcePath": "/home/eda369/Chainlink/Polynet-attack/PolynetDoors/contracts/PolynetDoors.sol",
+  "ast": {
+    "absolutePath": "/home/eda369/Chainlink/Polynet-attack/PolynetDoors/contracts/PolynetDoors.sol",
+    "exportedSymbols": {
+      "PolynetDoors": [
+        24
+      ]
+    },
+    "id": 25,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "57:23:0"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 24,
+        "linearizedBaseContracts": [
+          24
+        ],
+        "name": "PolynetDoors",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "9f5755ae",
+            "id": 4,
+            "mutability": "mutable",
+            "name": "announcement",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 24,
+            "src": "291:1993:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "291:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "2020202020202020202020202020202032303231e5b9b438e69c883131e697a5506f6c796e6574776f726b204465466920e694bbe587bbe69ab4e99cb2e79a84e6bc8fe6b49ee4bbb7e580bce4bcb0e7ae97efbc8ce58f82e88083e58cbae59d97e993bee8a18ce4b89ae4b88ae5b882e585ace58fb820636f696e62617365e79a84e585ace5bc80e896aae8b584e5be85e98187efbc8c20202020202020202020202020202020e4baa7e59381e7bb8fe79086e7baa7e588ab203430e4b887e7be8ee58583e5b9b4e896aaefbc8ce69c88e896aa20332e3333e4b887e38082e8afa5e6bc8fe6b49ee5a881e88381e7ad89e7baa7203130e7baa7e3808220202020202020202020202020202020e6a0b9e68daee9bb91e5aea2e7acace4ba8ce5ae9ae5be8be79a84e4bcb0e4bbb7e585ace5bc8fe4bbb7e580bce4b8ba20efbc9a2035202a20332e3333202a203130203d20243136362e35e4b8872020202020202020202020202020202020e5a487e6b3a83a202020202020202020202020202020202020202020e58583e5ae87e5ae99e7acace4ba8ce5ae9ae5be8b20efbc9a2020202020202020202020202020202020202020202020202020202020202020202020e4bfa1e681afe5ae89e585a8e6bc8fe6b49ee79a84e5b882e59cbae4bbb7e580bc203d2020202020202020202020202020202020202020202020202020202020202020202020202020202020352020202020202020202020202020202020202020202020202020202020202020202020202020c39720e4baa7e7949fe8afa5e5ae89e585a8e6bc8fe6b49ee5bc80e58f91e4babae59198e79a84e69c88e5b9b3e59d87e5b7a5e8b584202020202020202020202020202020202020202020202020202020202020202020202020c39720e6bc8fe6b49ee79a84e5ae89e585a8e7ad89e7baa720202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020203d3d3d3e20202020e5ae9ae5be8be588b6e5ae9ae8808520e5be90e9b9a4e5869b202020202020202020202020202020202a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a20202020202020202020202020202020204175677573742031312c203230323120506f6c796e6574776f726b20536563757269747920496e636964656e742c2074686520657374696d617465642076616c7565206f66207468652076756c6e65726162696c697479206578706f736564206279207468697320506f6c796e6574776f726b20446546692061747461636b2c202020202020202020202020202020202077697468207265666572656e636520746f20746865207075626c69632073616c617279207061636b616765206f6620636f696e626173652c2020202020202020202020202020202061206c697374656420636f6d70616e7920696e2074686520626c6f636b636861696e20696e6475737472792c20697320243430302c303030207065722079656172206174207468652070726f64756374206d616e61676572206c6576656c2c2020202020202020202020202020202020206f72202433332c33303020706572206d6f6e74682e205468652076756c6e65726162696c69747920686173206120746872656174206c6576656c206f662031302e20202020202020202020202020202020204163636f7264696e6720746f20746865207365636f6e64206c6177206f66206861636b696e672076616c756174696f6e20666f726d756c612076616c75652069733a2035202a20332e3333202a203130203d2024312e363635206d696c6c696f6e202020202020202020202020202020204e6f7465733a2020202020202020202020202020202020546865205365636f6e64204c6177206f66206861636b6572206d65746176657273652e2020202020202020202020202020202020202020202020202020202020202020202020204d61726b65742076616c7565206f6620637962657273656375726974792076756c6e65726162696c697479203d20202020202020202020202020202020202020202020202020202020202020202020202020203520202020202020202020202020202020202020202020202020202020202020202020202020c397207468652061766572616765206d6f6e74686c792073616c617279206f662074686520646576656c6f7065722077686f20637265617465642074686520637962657273656375726974792076756c6e65726162696c697479202020202020202020202020202020202020202020202020202020202020202020202020c3972074686520696d706163742073636f7265206f66207468652076756c6e65726162696c6974792020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020546865206c61772077617320637265617465642062792058752048656a756e2020202020202020202020202020202020",
+              "id": 3,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "320:1964:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_3bb1560615304f2605e632d5e10c555bec5962baa49952ac0747e9c63e2a2715",
+                "typeString": "literal_string \"                2021年8月11日Polynetwork DeFi 攻击暴露的漏洞价值估算，参考区块链行业上市公司 coinbase的公开薪资待遇，                产品经理级别 40万美元年薪，月薪 3.33万。该漏洞威胁等级 10级。                根据黑客第二定律的估价公式价值为 ： 5 * 3.33 * 10 = $166.5万                 备注:                     元宇宙第二定律 ：                                   信息安全漏洞的市场价值 =                                         5                                      × 产生该安全漏洞开发人员的月平均工资                                    × 漏洞的安全等级                                                                       ===>    定律制定者 徐鹤军                **********************************************                 August 11, 2021 Polynetwork Security Incident, the estimated value of the vulnerability exposed by this Polynetwork DeFi attack,                 with reference to the public salary package of coinbase,                a listed company in the blockchain industry, is $400,000 per year at the product manager level,                  or $33,300 per month. The vulnerability has a threat level of 10.                 According to the second law of hacking valuation formula value is: 5 * 3.33 * 10 = $1.665 million                Notes:                 The Second Law of hacker metaverse.                                    Market value of cybersecurity vulnerability =                                      5                                     × the average monthly salary of the developer who created the cybersecurity vulnerability                                    × the impact score of the vulnerability                                                                                            The law was created by Xu Hejun                 \""
+              },
+              "value": "                2021年8月11日Polynetwork DeFi 攻击暴露的漏洞价值估算，参考区块链行业上市公司 coinbase的公开薪资待遇，                产品经理级别 40万美元年薪，月薪 3.33万。该漏洞威胁等级 10级。                根据黑客第二定律的估价公式价值为 ： 5 * 3.33 * 10 = $166.5万                 备注:                     元宇宙第二定律 ：                                   信息安全漏洞的市场价值 =                                         5                                      × 产生该安全漏洞开发人员的月平均工资                                    × 漏洞的安全等级                                                                       ===>    定律制定者 徐鹤军                **********************************************                 August 11, 2021 Polynetwork Security Incident, the estimated value of the vulnerability exposed by this Polynetwork DeFi attack,                 with reference to the public salary package of coinbase,                a listed company in the blockchain industry, is $400,000 per year at the product manager level,                  or $33,300 per month. The vulnerability has a threat level of 10.                 According to the second law of hacking valuation formula value is: 5 * 3.33 * 10 = $1.665 million                Notes:                 The Second Law of hacker metaverse.                                    Market value of cybersecurity vulnerability =                                      5                                     × the average monthly salary of the developer who created the cybersecurity vulnerability                                    × the impact score of the vulnerability                                                                                            The law was created by Xu Hejun                 "
+            },
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 6,
+            "mutability": "mutable",
+            "name": "owner",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 24,
+            "src": "2418:21:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 5,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "2418:7:0",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 14,
+              "nodeType": "Block",
+              "src": "2530:115:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 9,
+                      "name": "owner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6,
+                      "src": "2620:5:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 10,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -15,
+                        "src": "2628:3:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 11,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "2628:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "2620:18:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 13,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2620:18:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 15,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2520:2:0"
+            },
+            "returnParameters": {
+              "id": 8,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2530:0:0"
+            },
+            "scope": 24,
+            "src": "2509:136:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 22,
+              "nodeType": "Block",
+              "src": "2828:36:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 20,
+                    "name": "announcement",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4,
+                    "src": "2845:12:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 19,
+                  "id": 21,
+                  "nodeType": "Return",
+                  "src": "2838:19:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "functionSelector": "191384d1",
+            "id": 23,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "viewMessage",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 16,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2789:2:0"
+            },
+            "returnParameters": {
+              "id": 19,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 18,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 23,
+                  "src": "2813:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 17,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2813:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2812:15:0"
+            },
+            "scope": 24,
+            "src": "2769:95:0",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 25,
+        "src": "82:2785:0"
+      }
+    ],
+    "src": "57:2811:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/home/eda369/Chainlink/Polynet-attack/PolynetDoors/contracts/PolynetDoors.sol",
+      "exportedSymbols": {
+        "PolynetDoors": [
+          24
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "57:23:0"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            24
+          ],
+          "name": "PolynetDoors",
+          "scope": 25
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "9f5755ae",
+              "mutability": "mutable",
+              "name": "announcement",
+              "overrides": null,
+              "scope": 24,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 2,
+                "name": "ElementaryTypeName",
+                "src": "291:6:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "2020202020202020202020202020202032303231e5b9b438e69c883131e697a5506f6c796e6574776f726b204465466920e694bbe587bbe69ab4e99cb2e79a84e6bc8fe6b49ee4bbb7e580bce4bcb0e7ae97efbc8ce58f82e88083e58cbae59d97e993bee8a18ce4b89ae4b88ae5b882e585ace58fb820636f696e62617365e79a84e585ace5bc80e896aae8b584e5be85e98187efbc8c20202020202020202020202020202020e4baa7e59381e7bb8fe79086e7baa7e588ab203430e4b887e7be8ee58583e5b9b4e896aaefbc8ce69c88e896aa20332e3333e4b887e38082e8afa5e6bc8fe6b49ee5a881e88381e7ad89e7baa7203130e7baa7e3808220202020202020202020202020202020e6a0b9e68daee9bb91e5aea2e7acace4ba8ce5ae9ae5be8be79a84e4bcb0e4bbb7e585ace5bc8fe4bbb7e580bce4b8ba20efbc9a2035202a20332e3333202a203130203d20243136362e35e4b8872020202020202020202020202020202020e5a487e6b3a83a202020202020202020202020202020202020202020e58583e5ae87e5ae99e7acace4ba8ce5ae9ae5be8b20efbc9a2020202020202020202020202020202020202020202020202020202020202020202020e4bfa1e681afe5ae89e585a8e6bc8fe6b49ee79a84e5b882e59cbae4bbb7e580bc203d2020202020202020202020202020202020202020202020202020202020202020202020202020202020352020202020202020202020202020202020202020202020202020202020202020202020202020c39720e4baa7e7949fe8afa5e5ae89e585a8e6bc8fe6b49ee5bc80e58f91e4babae59198e79a84e69c88e5b9b3e59d87e5b7a5e8b584202020202020202020202020202020202020202020202020202020202020202020202020c39720e6bc8fe6b49ee79a84e5ae89e585a8e7ad89e7baa720202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020203d3d3d3e20202020e5ae9ae5be8be588b6e5ae9ae8808520e5be90e9b9a4e5869b202020202020202020202020202020202a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a20202020202020202020202020202020204175677573742031312c203230323120506f6c796e6574776f726b20536563757269747920496e636964656e742c2074686520657374696d617465642076616c7565206f66207468652076756c6e65726162696c697479206578706f736564206279207468697320506f6c796e6574776f726b20446546692061747461636b2c202020202020202020202020202020202077697468207265666572656e636520746f20746865207075626c69632073616c617279207061636b616765206f6620636f696e626173652c2020202020202020202020202020202061206c697374656420636f6d70616e7920696e2074686520626c6f636b636861696e20696e6475737472792c20697320243430302c303030207065722079656172206174207468652070726f64756374206d616e61676572206c6576656c2c2020202020202020202020202020202020206f72202433332c33303020706572206d6f6e74682e205468652076756c6e65726162696c69747920686173206120746872656174206c6576656c206f662031302e20202020202020202020202020202020204163636f7264696e6720746f20746865207365636f6e64206c6177206f66206861636b696e672076616c756174696f6e20666f726d756c612076616c75652069733a2035202a20332e3333202a203130203d2024312e363635206d696c6c696f6e202020202020202020202020202020204e6f7465733a2020202020202020202020202020202020546865205365636f6e64204c6177206f66206861636b6572206d65746176657273652e2020202020202020202020202020202020202020202020202020202020202020202020204d61726b65742076616c7565206f6620637962657273656375726974792076756c6e65726162696c697479203d20202020202020202020202020202020202020202020202020202020202020202020202020203520202020202020202020202020202020202020202020202020202020202020202020202020c397207468652061766572616765206d6f6e74686c792073616c617279206f662074686520646576656c6f7065722077686f20637265617465642074686520637962657273656375726974792076756c6e65726162696c697479202020202020202020202020202020202020202020202020202020202020202020202020c3972074686520696d706163742073636f7265206f66207468652076756c6e65726162696c6974792020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020546865206c61772077617320637265617465642062792058752048656a756e2020202020202020202020202020202020",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "string",
+                  "type": "literal_string \"                2021年8月11日Polynetwork DeFi 攻击暴露的漏洞价值估算，参考区块链行业上市公司 coinbase的公开薪资待遇，                产品经理级别 40万美元年薪，月薪 3.33万。该漏洞威胁等级 10级。                根据黑客第二定律的估价公式价值为 ： 5 * 3.33 * 10 = $166.5万                 备注:                     元宇宙第二定律 ：                                   信息安全漏洞的市场价值 =                                         5                                      × 产生该安全漏洞开发人员的月平均工资                                    × 漏洞的安全等级                                                                       ===>    定律制定者 徐鹤军                **********************************************                 August 11, 2021 Polynetwork Security Incident, the estimated value of the vulnerability exposed by this Polynetwork DeFi attack,                 with reference to the public salary package of coinbase,                a listed company in the blockchain industry, is $400,000 per year at the product manager level,                  or $33,300 per month. The vulnerability has a threat level of 10.                 According to the second law of hacking valuation formula value is: 5 * 3.33 * 10 = $1.665 million                Notes:                 The Second Law of hacker metaverse.                                    Market value of cybersecurity vulnerability =                                      5                                     × the average monthly salary of the developer who created the cybersecurity vulnerability                                    × the impact score of the vulnerability                                                                                            The law was created by Xu Hejun                 \"",
+                  "value": "                2021年8月11日Polynetwork DeFi 攻击暴露的漏洞价值估算，参考区块链行业上市公司 coinbase的公开薪资待遇，                产品经理级别 40万美元年薪，月薪 3.33万。该漏洞威胁等级 10级。                根据黑客第二定律的估价公式价值为 ： 5 * 3.33 * 10 = $166.5万                 备注:                     元宇宙第二定律 ：                                   信息安全漏洞的市场价值 =                                         5                                      × 产生该安全漏洞开发人员的月平均工资                                    × 漏洞的安全等级                                                                       ===>    定律制定者 徐鹤军                **********************************************                 August 11, 2021 Polynetwork Security Incident, the estimated value of the vulnerability exposed by this Polynetwork DeFi attack,                 with reference to the public salary package of coinbase,                a listed company in the blockchain industry, is $400,000 per year at the product manager level,                  or $33,300 per month. The vulnerability has a threat level of 10.                 According to the second law of hacking valuation formula value is: 5 * 3.33 * 10 = $1.665 million                Notes:                 The Second Law of hacker metaverse.                                    Market value of cybersecurity vulnerability =                                      5                                     × the average monthly salary of the developer who created the cybersecurity vulnerability                                    × the impact score of the vulnerability                                                                                            The law was created by Xu Hejun                 "
+                },
+                "id": 3,
+                "name": "Literal",
+                "src": "320:1964:0"
+              }
+            ],
+            "id": 4,
+            "name": "VariableDeclaration",
+            "src": "291:1993:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "owner",
+              "overrides": null,
+              "scope": 24,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "private"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 5,
+                "name": "ElementaryTypeName",
+                "src": "2418:7:0"
+              }
+            ],
+            "id": 6,
+            "name": "VariableDeclaration",
+            "src": "2418:21:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "overrides": null,
+              "scope": 24,
+              "stateMutability": "nonpayable",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 7,
+                "name": "ParameterList",
+                "src": "2520:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 8,
+                "name": "ParameterList",
+                "src": "2530:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 6,
+                              "type": "address",
+                              "value": "owner"
+                            },
+                            "id": 9,
+                            "name": "Identifier",
+                            "src": "2620:5:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "referencedDeclaration": null,
+                              "type": "address payable"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": -15,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 10,
+                                "name": "Identifier",
+                                "src": "2628:3:0"
+                              }
+                            ],
+                            "id": 11,
+                            "name": "MemberAccess",
+                            "src": "2628:10:0"
+                          }
+                        ],
+                        "id": 12,
+                        "name": "Assignment",
+                        "src": "2620:18:0"
+                      }
+                    ],
+                    "id": 13,
+                    "name": "ExpressionStatement",
+                    "src": "2620:18:0"
+                  }
+                ],
+                "id": 14,
+                "name": "Block",
+                "src": "2530:115:0"
+              }
+            ],
+            "id": 15,
+            "name": "FunctionDefinition",
+            "src": "2509:136:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "functionSelector": "191384d1",
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "viewMessage",
+              "overrides": null,
+              "scope": 24,
+              "stateMutability": "view",
+              "virtual": false,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 16,
+                "name": "ParameterList",
+                "src": "2789:2:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "mutability": "mutable",
+                      "name": "",
+                      "overrides": null,
+                      "scope": 23,
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 17,
+                        "name": "ElementaryTypeName",
+                        "src": "2813:6:0"
+                      }
+                    ],
+                    "id": 18,
+                    "name": "VariableDeclaration",
+                    "src": "2813:13:0"
+                  }
+                ],
+                "id": 19,
+                "name": "ParameterList",
+                "src": "2812:15:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 19
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 4,
+                          "type": "string storage ref",
+                          "value": "announcement"
+                        },
+                        "id": 20,
+                        "name": "Identifier",
+                        "src": "2845:12:0"
+                      }
+                    ],
+                    "id": 21,
+                    "name": "Return",
+                    "src": "2838:19:0"
+                  }
+                ],
+                "id": 22,
+                "name": "Block",
+                "src": "2828:36:0"
+              }
+            ],
+            "id": 23,
+            "name": "FunctionDefinition",
+            "src": "2769:95:0"
+          }
+        ],
+        "id": 24,
+        "name": "ContractDefinition",
+        "src": "82:2785:0"
+      }
+    ],
+    "id": 25,
+    "name": "SourceUnit",
+    "src": "57:2811:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {
+    "137": {
+      "events": {},
+      "links": {},
+      "address": "0x1263275E902F98680EA5e0491f6ccf9A030e4CE8",
+      "transactionHash": "0xc121f24e9a6fed37374ac34f15bd32b6e7c0460086c3ed63a36f6828e85dbe36"
+    }
+  },
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-08-17T01:11:40.622Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

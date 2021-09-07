@@ -1,0 +1,38 @@
+{
+  "name": "PolynetDoors",
+  "version": "0.1.0",
+  "description": "Aug,10,2021 Polynetwork DeFi incident ,Evaluated the fair value of vulnerability with the second law of hacker metaverse",
+  "main": "index.js",
+  "dependencies": {
+    "@chainlink/contracts": "^0.2.1",
+    "@openzeppelin/contracts": "^3.1.0",
+    "@truffle/hdwallet-provider": "^1.4.2",
+    "dotenv": "^10.0.0",
+    "node-fetch": "^2.6.1",
+    "solc": "^0.6.12"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-environment": "^0.1.9",
+    "@openzeppelin/test-helpers": "^0.5.11",
+    "chai": "^4.3.4",
+    "eslint": "^7.26.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^8.3.2",
+    "truffle": "^5.3.4"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xffee/PolynetDoors.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0xffee/PolynetDoors/issues"
+  },
+  "homepage": "https://github.com/0xffee/PolynetDoors/readme"
+}
